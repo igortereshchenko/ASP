@@ -1,0 +1,18 @@
+﻿@using ASPMVC.Controllers
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+Main container
+    @Html.ActionLink("Home","Home","Home") | @*link text, action name, controller*@
+    @Html.ActionLink("Partial View","PartialView","Home") 
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
